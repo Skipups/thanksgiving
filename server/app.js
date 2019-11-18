@@ -7,7 +7,9 @@ const app = express();
 
 app.use(express.json());
 
-app.use("/api/people", require("./api/people"));
+const peopleRoutes = require("./api/people");
+
+app.use("/api/people", peopleRoutes);
 app.use("/api/dishes", require("./api/dishes"));
 
 app.use((err, req, res, next) => {

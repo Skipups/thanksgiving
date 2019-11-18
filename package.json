@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node server/index.js",
     "start:watch": "nodemon server/index.js",
-    "test": "jest --runInBand",
-    "test:watch": "jest --runInBand --watch"
+    "test": "jest --runInBand --verbose",
+    "test:watch": "jest --runInBand --watch --verbose"
   },
   "author": "",
   "license": "ISC",
